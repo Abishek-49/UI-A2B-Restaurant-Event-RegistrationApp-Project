@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="eventRegistration.css">
+  <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+  <title>Event Registration</title>
+</head>
+
+<body>
+  <header>
+    <section class="section1">
+      <div class="container">
+        <div class="navigation">
+          <div class="navbar1">
+            <a href="eventRegistration.html">Event Registration</a>
+            <a href="home.html">Home</a>
+          </div>
+          <div class="navbar2">
+            <button>
+              Menu
+            </button>
+            <div class="dropdown-content">
+              <a href="breakfast.html">Breakfast</a>
+              <a href="lunch.html">Lunch</a>
+              <a href="dinner.html">Dinner</a>
+              <a href="sweets&snacks.html">Sweets & Snacks</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="section1">
+      <div class="container">
+        <div class="a2b">
+          <img src="images/a2b-image...webp">
+          <h2>Adayar <span>Anandha</span> Bhavan</h2>
+          <h4>Pure Veg. Since - 1979</h4>
+        </div>
+      </div>
+    </section>
+    <form class="section2" name="submit-to-google-sheet">
+      <fieldset>
+        <div class="container">
+          <legend>Event Registration Form</legend>
+          <section class="name">
+            <div class="fname">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="fname" placeholder="abb" size="28" autocomplete="on" required>
+            </div>
+            <div class="mname">
+              <label for="mname">Middle Name</label>
+              <input type="text" id="mname" name="mname" title="Not mandatory" size="28" autocomplete="on">
+            </div>
+            <div class="lname">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lname" placeholder="vie" size="28" autocomplete="on" required>
+            </div>
+          </section>
+          <section class="details">
+            <div class="emailAndAddress">
+              <div class="email">
+                <label for="email" class="email">Email</label>
+                <input type="email" id="email" name="email" title="abc@example.com"
+                  placeholder="type your email address here" required>
+              </div>
+              <div class="address">
+                <label for="address" class="address">Address</label>
+                <textarea class="textarea" name="address" id="address" title="your current place where you live"
+                  placeholder="pls!! type your present residing address here.." required></textarea>
+              </div>
+            </div>
+            <div class="moblAndGender">
+              <div class="mobl">
+                <label for="mobl" class="mobl">Mobile No</label>
+                <input type="tel" id="mobl" name="mobl" title="Example - 9195500550"
+                  placeholder="Enter your phn No here" size="25" pattern="[0-9]{10}" required>
+              </div>
+              <div class="gender">
+                <label for="gender">Gender</label>
+                <input type="radio" id="male" value="Male" name="gender" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" value="female" name="gender" required>
+                <label for="female">Female</label>
+              </div>
+            </div>
+            <div class="menuAndMenuitems">
+              <div class="menu">
+                <label for="menu" class="menu">Menu</label>
+                <select name="menu" id="menu" required>
+                  <option value="breakfast">Breakfast</option>
+                  <option value="lunch">Lunch</option>
+                  <option value="dinner">Dinner</option>
+                  <option value="dinner">Sweets & Snacks</option>
+                </select>
+              </div>
+              <div class="menuitems">
+                <label for="menuitems" class="menuitems">Menu Items</label>
+                <input list="menuitems" size="50" class="menuitems" name="menuitems" required>
+                <datalist id="menuitems" name="menuitems">
+                  <option value="idly">
+                  <option value="dosa">
+                  <option value="SouthIndianMeals">
+                  <option value="VarietyRice">
+                  <option value="Chappathi"></option>
+                  <option value="Paratha"></option>
+                </datalist>
+              </div>
+            </div>
+            <div class="eventdateAndEventslottime">
+              <div class="eventDate">
+                <label for="slotdate" class="slotdate">Event Date</label>
+                <input type="date" name="slotdate" id="slotdate" min="2024-01-09" max="2024-01-25" style="width: 150px;"
+                  required>
+              </div>
+              <div class="eventSlottime">
+                <label for="slottime" class="slottime">Event Slot Time</label>
+                <input type="time" name="slottime" id="slottime" style="width: 150px;" required>
+              </div>
+            </div>
+            <div class="disabled">
+              <div class="disble1">
+                <input type="text" id="slotdate" name="slotdate" value='" You can only select btwn 9th to 25th jan. "'
+                  size="34" disabled>
+              </div>
+              <div class="disable2">
+                <input type="text" id="slottime" name="slottime"
+                  value='" Starts from mrng 10:30 am till eve 7:30 pm IST "' size="40" disabled>
+              </div>
+            </div>
+            <div class="submit">
+              <button type="submit">
+                submit
+              </button>
+            </div>
+          </section>
+          <div id="loading" style="font-size: 0.75rem; margin:7px 0;display:none;">Submitting .....</div>
+        </div>
+        </div>
+      </fieldset>
+    </form>
+  </main>
+
+  <footer>
+    <section class="section1">
+      <div class="container">
+        <div class="footer">
+          <p>Mail us on : a2b@gmail.com</p>
+          <p>Copyright <img src="images/c2.png" alt="copyrights"> 2023 , Adayar Anandha Bhavan All Rights Reserved.</p>
+          <p>Call us on : 9500199056</p>
+        </div>
+      </div>
+    </section>
+  </footer>
+
+  <script src="eventRegistration.js"></script>
+
+</body>
+
+</html>

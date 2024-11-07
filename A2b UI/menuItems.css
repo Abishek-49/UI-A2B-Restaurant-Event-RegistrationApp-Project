@@ -1,0 +1,522 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  font-family: 'Inter';
+  background-color: #3f3e3e;
+}
+
+.container {
+  max-width: 95%;
+  margin: 0 auto;
+}
+
+header .section1 {
+  letter-spacing: 1.2px;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0px 0px 10px 10px rgb(32, 32, 32);
+}
+
+header .section1 .container .navigation {
+  display: flex;
+  flex-direction: row-reverse;
+  font-weight: 500;
+}
+
+header .section1 .container .navbar1 {
+  display: flex;
+}
+
+header .section1 .container .navbar1 a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  border-radius: 2px;
+  margin: 0 10px;
+  padding: 0 20px;
+}
+
+header .section1 .container .navbar2 button {
+  text-decoration: none;
+  border: none;
+  color: white;
+  letter-spacing: 1.2px;
+  font-size: 1rem;
+  background-color: #333;
+  ;
+  border-radius: 1px;
+  padding: 20px 15px;
+}
+
+header .section1 .container .navbar2 {
+  flex-grow: 1;
+
+}
+
+header .section1 .container .navigation .navbar1 a:hover {
+  background-color: red;
+}
+
+header .section1 .container .navigation .navbar2 button:hover {
+  background-color: red;
+
+}
+
+header .section1 .container .navigation .navbar2 .dropdown-content {
+  /* letter-spacing: 1.2px; */
+  margin-left: 10px;
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  z-index: 1;
+}
+
+header .section1 .container .navigation .navbar2 .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  text-align: center;
+}
+
+header .section1 .container .navigation .navbar2 .dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+header .section1 .container .navigation .navbar2:hover .dropdown-content {
+  display: flex;
+  flex-direction: column;
+}
+
+main .section1 {
+  /* width: 100%; */
+  padding: 30px 0;
+  margin: 55px 0;
+  letter-spacing: 1.5px;
+
+}
+
+main .section1 .container .a2b {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .section1 .container .a2b img {
+  width: 300px;
+}
+
+main .section1 .container .a2b h2 {
+  color: rgb(79, 70, 236);
+  font-weight: 600;
+  margin: 10px 0 5px 0;
+}
+
+main .section1 .container .a2b h2>span {
+  color: red;
+}
+
+main .section1 .container .a2b>h4 {
+  font-size: 1.2rem;
+  margin: 0 0 10px 0;
+  color: rgb(54, 192, 4);
+  font-weight: 100;
+
+}
+
+main .section1+h3 {
+  font-size: 1.3rem;
+  text-align: center;
+  text-decoration: underline;
+  color: rgb(227, 10, 10);
+  font-weight: 500;
+  letter-spacing: 1.5px;
+}
+
+main .section2 {
+  color: white;
+  padding: 30px 0;
+  margin: 55px 0;
+  line-height: 30px;
+  letter-spacing: 0.8px;
+}
+
+main .section2 .container .aboutItems {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+main .section2 .container .aboutItems p {
+  color: white;
+  font-size: 1.1rem;
+  word-spacing: 2.5px;
+  margin: 17px 0 90px 0;
+}
+
+main .section2 .container .aboutItems p span {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: rgb(79, 70, 236);
+  font-style: italic;
+}
+
+main .section2 .container .aboutItems img {
+  width: 300px;
+  padding: 20px 20px;
+  background-color: aliceblue;
+  box-shadow: 0px 0px 20px 3px rgb(0, 0, 0);
+}
+
+.section2 .container .aboutItems figcaption {
+  color: rgb(227, 10, 10);
+  font-weight: 600;
+}
+
+.section2 .container .details {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ddd;
+  margin-top: 40px;
+  margin-bottom: 70px;
+  padding: 0 20px 3px 20px;
+  line-height: 30px;
+  word-spacing: 3px;
+}
+
+.section2 .container .details summary {
+  cursor: pointer;
+  list-style: none;
+  color: rgb(16, 179, 16);
+  font-weight: 900;
+}
+
+.section2 .container .details ol {
+  padding-bottom: 10px;
+}
+
+.section2 .container .details details .idlyTable tr:nth-child(even),
+.dosaTable tr:nth-child(even),
+.mealsTable tr:nth-child(even),
+.varietyriceTable tr:nth-child(even),
+.chappathiTable tr:nth-child(even),
+.parathaTable tr:nth-child(even),
+.samosaTable tr:nth-child(even),
+.ladduTable tr:nth-child(even) {
+  background-color: rgba(150, 212, 212, 0.4);
+  border: 1px solid black;
+}
+
+.section2 .container .details details .idlyTable th,
+td:nth-child(odd),
+td:nth-child(even) {
+  padding: 10px 145px;
+  border: 1px solid black;
+  background-color: rgba(150, 212, 212, 0.4);
+}
+
+.section2 .container .details details .dosaTable th,
+td:nth-child(odd),
+td:nth-child(even) {
+  border: 1px solid black;
+  background-color: rgba(150, 212, 212, 0.4);
+}
+
+.section2 .container .details details .mealsTable th,
+td:nth-child(odd),
+td:nth-child(even) {
+  border: 1px solid black;
+  background-color: rgba(150, 212, 212, 0.4);
+}
+
+.section2 .container .details details .varietyriceTable th,
+td:nth-child(odd),
+td:nth-child(even) {
+  border: 1px solid black;
+  background-color: rgba(150, 212, 212, 0.4);
+}
+
+.section2 .container .details details .chappathiTable th,
+td:nth-child(odd),
+td:nth-child(even) {
+  border: 1px solid black;
+  background-color: rgba(150, 212, 212, 0.4);
+}
+
+.section2 .container .details details .parathaTable th,
+td:nth-child(odd),
+td:nth-child(even) {
+  border: 1px solid black;
+  background-color: rgba(150, 212, 212, 0.4);
+}
+
+.section2 .container .details details .ladduTable th,
+td:nth-child(odd),
+td:nth-child(even) {
+  border: 1px solid black;
+  background-color: rgba(150, 212, 212, 0.4);
+}
+
+.section2 .container .details details .samosaTable th,
+td:nth-child(odd),
+td:nth-child(even) {
+  border: 1px solid black;
+  background-color: rgba(150, 212, 212, 0.4);
+}
+
+@media (max-width:1024px) {
+  header .section1 {
+    font-size: 0.9rem;
+  }
+
+  header .section1 .container .navbar2 button {
+    font-size: 0.9rem;
+  }
+
+  main .section1 .container .a2b h2 {
+    font-size: 1.3rem;
+  }
+
+  main .section1 .container .a2b h4 {
+    font-size: 1.1rem;
+  }
+
+  main .section1+h3 {
+    font-size: 1.1rem;
+  }
+
+  main .section2 .container .aboutItems p {
+    font-size: 1rem;
+  }
+
+  main .section2 .container .aboutItems p span {
+    font-size: 1.2rem;
+  }
+
+  main .section2 .container .details {
+    font-size: 0.9rem;
+  }
+
+  footer .section1 {
+    font-size: 0.7rem;
+  }
+
+  footer .section1 .container .footer p img {
+    width: 20px;
+    height: 20px;
+  }
+
+}
+
+@media (max-width:768px) {
+  header .section1 {
+    font-size: 0.8rem;
+  }
+
+  header .section1 .container .navbar2 button {
+    font-size: 0.8rem;
+  }
+
+  main .section1 .container .a2b h2 {
+    font-size: 1.2rem;
+  }
+
+  main .section1 .container .a2b h4 {
+    font-size: 1rem;
+  }
+
+  main .section1+h3 {
+    font-size: 1rem;
+  }
+
+  main .section2 .container .aboutItems p {
+    font-size: 0.9rem;
+  }
+
+  main .section2 .container .aboutItems p span {
+    font-size: 1.1rem;
+  }
+
+  main .section2 .container .details {
+    font-size: 0.8rem;
+  }
+
+  footer .section1 {
+    font-size: 0.6rem;
+  }
+
+  footer .section1 .container .footer p img {
+    width: 20px;
+    height: 20px;
+  }
+
+}
+
+@media (max-width:476px) {
+  header .section1 {
+    font-size: 0.7rem;
+  }
+
+  header .section1 .container .navbar2 button {
+    font-size: 0.7rem;
+  }
+
+  main .section1 .container .a2b h2 {
+    font-size: 1.1rem;
+  }
+
+  main .section1 .container .a2b h4 {
+    font-size: 0.9rem;
+  }
+
+  main .section1+h3 {
+    font-size: 0.9rem;
+  }
+
+  main .section2 .container .aboutItems p {
+    font-size: 0.8rem;
+  }
+
+  main .section2 .container .aboutItems p span {
+    font-size: 1rem;
+  }
+
+  main .section2 .container .details {
+    font-size: 0.7rem;
+  }
+
+  footer .section1 {
+    font-size: 0.5rem;
+  }
+
+  footer .section1 .container .footer p img {
+    width: 15px;
+    height: 15px;
+  }
+
+}
+
+
+@media (max-width:844px) {
+
+  .section2 .container .details details .idlyTable th,
+  td:nth-child(odd),
+  td:nth-child(even) {
+    padding: 10px 100px;
+    border: 1px solid black;
+    background-color: rgba(150, 212, 212, 0.4);
+  }
+}
+
+@media (max-width:651px) {
+
+  .section2 .container .details details .idlyTable th,
+  td:nth-child(odd),
+  td:nth-child(even) {
+    padding: 10px 60px;
+    border: 1px solid black;
+    background-color: rgba(150, 212, 212, 0.4);
+  }
+}
+
+@media (max-width:497px) {
+
+  .section2 .container .details details .idlyTable th,
+  td:nth-child(odd),
+  td:nth-child(even) {
+    padding: 10px 30px;
+    border: 1px solid black;
+    background-color: rgba(150, 212, 212, 0.4);
+  }
+}
+
+@media (max-width:454px) {
+
+  .section2 .container .details details .idlyTable th,
+  td:nth-child(odd),
+  td:nth-child(even) {
+    padding: 10px 10px;
+    border: 1px solid black;
+    background-color: rgba(150, 212, 212, 0.4);
+  }
+}
+
+@media (max-width:337px) {
+  .section2 .container .details details .mealsTable tr td:last-child {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6em;
+  }
+}
+
+.section2 .container .details details .idlyTable,
+.dosaTable,
+.mealsTable,
+.varietyriceTable,
+.chappathiTable,
+.parathaTable,
+.ladduTable,
+.samosaTable {
+  border-collapse: collapse;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  align-items: center;
+}
+
+.section2 .container .details details .idlyTable caption,
+.dosaTable caption,
+.mealsTable caption,
+.varietyriceTable caption,
+.chappathiTable caption,
+.parathaTable caption,
+.ladduTable caption,
+.samosaTable caption {
+  color: rgb(79, 70, 236);
+  font-weight: 600;
+}
+
+.section2 .container .details details .idlyTable tr td img,
+.dosaTable tr td img,
+.mealsTable tr td img,
+.varietyriceTable tr td img,
+.chappathiTable tr td img,
+.parathaTable tr td img,
+.ladduTable tr td img,
+.samosaTable tr td img {
+  width: 12px;
+}
+
+footer .section1 {
+  letter-spacing: 1.2px;
+  background-color: #333;
+  color: white;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  z-index: 1000;
+  box-shadow: 0px 0px 10px 10px rgb(32, 32, 32);
+}
+
+footer .section1 .container .footer {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+footer .section1 .container .footer img {
+  width: 25px;
+  height: 25px;
+}
