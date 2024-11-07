@@ -1,0 +1,351 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    font-family: 'Inter';
+    background-color:#3f3e3e;
+}
+.container {
+    max-width: 95%;
+    margin: 0 auto;
+  }
+  header .section1 {
+    letter-spacing: 1.2px;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0px 0px 10px 10px rgb(32, 32, 32);
+    /* width: 1263px; */
+  }
+  
+  header .section1 .container .navigation {
+    display: flex;
+    flex-direction: row-reverse;
+    font-weight: 500;
+  }
+  
+  header .section1 .container .navbar1 {
+    display: flex;
+  }
+  
+  header .section1 .container .navbar1 a {
+    text-decoration: none;
+    color: white;
+display: flex;
+align-items: center;
+border-radius: 2px;
+margin: 0 10px;
+padding: 0 20px;
+  }
+  
+  header .section1 .container .navbar2 button {
+    text-decoration: none;
+    border: none;
+    color: white;
+    letter-spacing: 1.2px;
+    font-size: 1rem;
+  background-color: #333; ;
+    border-radius: 1px;
+    padding: 20px 15px;
+  }
+  
+  header .section1 .container .navbar2 {
+    flex-grow: 1;
+  
+  }
+  
+  header .section1 .container .navigation .navbar1 a:hover {
+    background-color: red;
+  }
+  
+  header .section1 .container .navigation .navbar2 button:hover {
+    background-color: red;
+  
+  }
+  
+  header .section1 .container .navigation .navbar2 .dropdown-content {
+    margin-left: 10px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    z-index: 1;
+  }
+  
+  header .section1 .container .navigation .navbar2 .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  header .section1 .container .navigation .navbar2 .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  header .section1 .container .navigation .navbar2:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  main .section1{
+    /* width: 100%; */
+    padding:30px 0;
+    margin: 55px 0;
+    letter-spacing: 1.5px;
+    
+  }
+  main .section1 .container .a2b{
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+  }
+  main .section1 .container .a2b img{
+    width: 300px;
+
+  }
+  
+  main .section1 .container .a2b h2 {
+    color: rgb(79, 70, 236);
+    font-weight: 600;
+    margin: 10px 0 5px 0;
+  }
+  
+  main .section1 .container .a2b h2>span {
+    color: red;
+  }
+  
+  main .section1 .container .a2b>h4 {
+    font-size: 1.2rem;
+    margin:0 0 10px 0;
+    color: rgb(54, 192, 4);
+    font-weight: 100;
+
+  }
+  main .section2 {
+    word-spacing: 3.1px;
+    letter-spacing: 0.9px;
+    margin: 10px 0px;
+    padding: 10px 0;
+    line-height: 40px;
+   
+  }
+  main .section2 .container .welcomeMessage{
+    background: aliceblue;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px 5px rgb(0, 0, 0);
+
+  }
+  main .section2 .container .welcomeMessage ul li:nth-child(2) {
+    margin-left: 40px;
+    font-weight: 600;
+  }
+  
+  main .section2 .container .welcomeMessage ul li:nth-child(3n+1) {
+    font-weight: 600;
+  }
+  
+  main .section2 .container .welcomeMessage ul li>span {
+    color: red;
+    font-weight: 600;
+    font-style: italic;
+  }
+  main .section3 {
+    margin: 20px 0;
+    padding: 70px 0 140px 0;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    line-height: 30px;
+  }
+  
+  main .section3 .container .food {
+    margin: 0 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 7em;
+    
+  }
+  
+  main .section3 .container .food .menuItems {
+    box-shadow: 0px 0px 20px 5px rgb(0, 0, 0);
+    padding: 20px 20px 0px 20px;
+    background-color: aliceblue;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+  
+  
+  }
+  
+  main .section3 .container .food .menuItems img {
+    
+    width: 250px;
+    height: 180px;
+    /* margin-left: 40px; */
+
+  }
+  main .section3 .container .food .menuItems figcaption{
+display: flex;
+justify-content: center;
+font-weight: 600;
+  }
+  /* main .section3 .container .food .menuItems details{
+    width:340px;
+  } */
+  main .section3 .container .food .menuItems details>summary{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-weight: 600;
+    margin: 10px 0;
+    cursor: pointer;
+   
+  }
+  main .section3 .container .food .menuItems details summary+span{
+    margin: 20px 0 0 0;
+    display: flex;
+    justify-content: center;
+    color: red;
+    font-weight: 600;
+  }
+  main .section3 .container .food .menuItems details ul{
+    margin: 10px 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .section1 {
+    letter-spacing: 1.2px;
+    background-color: #333;
+    color: white;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
+    box-shadow: 0px 0px 10px 10px rgb(32, 32, 32);
+  }
+  
+  footer .section1 .container .footer {
+    display: flex;
+    justify-content:space-between;
+  
+  }
+  
+  footer .section1 .container .footer img {
+    width: 25px;
+    height: 25px;
+  }
+  @media screen and (max-width:1024px){
+    header .section1{
+      font-size: 0.9rem;
+    }
+    header .section1 .container .navbar2 button{
+      font-size: 0.9rem;
+  }
+    main .section1{
+      font-size: 0.9rem;
+    }
+  main .section2{
+    font-size: 0.9rem;
+  }
+    
+main .section3{
+  font-size: 0.9rem;
+}
+footer .section1{
+  font-size: 0.8rem;
+
+}
+footer .section1 .container .footer img{
+
+  width: 20px;
+  height: 20px;
+}
+  }
+  @media screen and (max-width:935px){
+    header .section1{
+      font-size: 0.8rem;
+    }
+    header .section1 .container .navbar2 button{
+      font-size: 0.8rem;
+  }
+    main .section1{
+      font-size: 0.8rem;
+    }
+  main .section2{
+    font-size: 0.8rem;
+  }
+    
+main .section3{
+  font-size: 0.8rem;
+}
+    footer .section1{
+      font-size: 0.7rem;
+    
+    }
+  }
+
+  @media screen and (max-width:834px){
+    header .section1{
+      font-size: 0.7rem;
+    }
+    header .section1 .container .navbar2 button{
+      font-size: 0.7rem;
+  }
+    main .section1{
+      font-size: 0.7rem;
+    }
+  main .section2{
+    font-size: 0.7rem;
+  }
+    
+main .section3{
+  font-size: 0.7rem;
+}
+    footer .section1{
+      font-size: 0.6rem;
+    
+    }
+    footer .section1 .container .footer img{
+
+      width: 15px;
+      height: 15px;
+    }
+}
+@media screen and (max-width:737px){
+  footer .section1{
+    font-size: 0.5rem;
+  
+  }
+  header .section1 .container .navigation .navbar2:hover .dropdown-content {
+    display: flex;
+    flex-direction: row;
+  }
+  header .section1 .container .navigation .navbar2 .dropdown-content a {
+padding: 8px 10px;
+  }
+
+
+}
+@media screen and (max-width:355px){
+  header .section1 .container .navigation .navbar2 .dropdown-content{
+    margin-left: 0;
+    }
+header .section1 .container .navigation .navbar2 .dropdown-content  a:last-child {
+  padding-left: 0;
+  padding-right: 0;
+ 
+    }
+  }
+
